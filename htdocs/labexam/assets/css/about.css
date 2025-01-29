@@ -1,0 +1,64 @@
+/* Gradient Background */
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Glassmorphism Card */
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: inset 0px 4px 6px rgba(255, 255, 255, 0.1),
+        0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Table Styling */
+.table th,
+.table td {
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
+    font-weight: bold;
+}
+
+.table-hover tbody tr:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transition: 0.3s ease-in-out;
+}
+
+/* Button Styling */
+button {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #222;
+}
